@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spectrum Dance Academy | Professional Dance Training</title>
+  <meta name="description" content="Spectrum Dance Academy offers world-class professional dance training for kids, teens, and adults in Hip Hop, Bollywood, Contemporary, Classical, and more.">
+  <meta property="og:title" content="Spectrum Dance Academy | Where Passion Meets Performance">
+  <meta property="og:description" content="Luxury dance studio with certified trainers, national performances, and flexible timings. Call +91 8935964374.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wa.me/918935964374">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#050505">
+
+  <!-- Fonts: Bebas Neue, Montserrat, Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN + FontAwesome Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            jet: '#050505',
+            darkSurface: '#0d0d11',
+            royal: {
+              DEFAULT: '#7C3AED',
+              light: '#9055FA',
+              dark: '#5B21B6'
+            },
+            gold: {
+              DEFAULT: '#FFD700',
+              light: '#FFE24A',
+              dark: '#D4AF37'
+            }
+          },
+          fontFamily: {
+            display: ['"Bebas Neue"', 'sans-serif'],
+            heading: ['"Montserrat"', 'sans-serif'],
+            body: ['"Poppins"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DanceGroup",
+    "name": "Spectrum Dance Academy",
+    "description": "Professional Dance Training For Kids, Teens & Adults",
+    "telephone": "+918935964374",
+    "url": "https://wa.me/918935964374",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #050505; }
+    ::-webkit-scrollbar-thumb { background: #7C3AED; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #FFD700; }
+
+    /* Glass Frost Effect */
+    .glass-card {
+      background: rgba(18, 18, 24, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    }
+    .glass-card-hover {
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card-hover:hover {
+      transform: translateY(-8px);
+      border-color: rgba(255, 215, 0, 0.4);
+      box-shadow: 0 25px 60px rgba(124, 58, 237, 0.25), 0 0 25px rgba(255, 215, 0, 0.15);
+    }
+
+    /* Soft Glows */
+    .glow-gold {
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.35);
+    }
+    .glow-purple {
+      box-shadow: 0 0 35px rgba(124, 58, 237, 0.4);
+    }
+    .text-glow-gold {
+      text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    }
+
+    /* Cursor */
+    @media (pointer: fine) {
+      .custom-cursor {
+        position: fixed;
+        width: 32px;
+        height: 32px;
+        border: 2px solid #FFD700;
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, background 0.3s ease;
+        z-index: 9999;
+      }
+      .cursor-dot {
+        position: fixed;
+        width: 6px;
+        height: 6px;
+        background: #7C3AED;
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        z-index: 10000;
+      }
+      .custom-cursor.hovered {
+        width: 54px;
+        height: 54px;
+        background: rgba(124, 58, 237, 0.25);
+        border-color: #FFD700;
+      }
+    }
+
+    /* Floating Keyframe */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-16px) rotate(1.5deg); }
+    }
+    .animate-float {
+      animation: floatSlow 6s ease-in-out infinite;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.1); }
+    }
+    .animate-pulse-glow {
+      animation: pulseGlow 5s ease-in-out infinite;
+    }
+
+    /* Lightbox Modal */
+    .lightbox-active {
+      display: flex !important;
+      opacity: 1 !important;
+    }
+
+    /* Accordion transition */
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+    }
+    .accordion-item.active .accordion-content {
+      max-height: 400px;
+      transition: max-height 0.5s ease-in-out;
+    }
+    .accordion-item.active .accordion-icon {
+      transform: rotate(180deg);
+      color: #FFD700;
+    }
+  </style>
+</head>
+
+<body class="bg-jet text-gray-100 font-body antialiased selection:bg-royal selection:text-gold overflow-x-hidden relative">
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scrollProgressBar" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-royal via-gold to-royal z-50 transition-all duration-75" style="width: 0%;"></div>
+
+  <!-- Loading Screen -->
+  <div id="loadingScreen" class="fixed inset-0 bg-jet z-[100] flex flex-col items-center justify-center transition-opacity duration-700">
+    <div class="relative flex flex-col items-center">
+      <!-- Animated Emblem -->
+      <div class="relative w-28 h-28 flex items-center justify-center mb-6">
+        <div class="absolute inset-0 rounded-full border-2 border-gold/30 animate-spin" style="animation-duration: 4s;"></div>
+        <div class="absolute inset-2 rounded-full border-2 border-dashed border-royal animate-spin" style="animation-duration: 8s; animation-direction: reverse;"></div>
+        <svg class="w-16 h-16 filter drop-shadow-[0_0_15px_#FFD700]" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="44" fill="none" stroke="#FFD700" stroke-width="2.5" opacity="0.8"/>
+          <path d="M50 22 C38 22 32 30 32 40 C32 52 68 50 68 64 C68 74 60 78 50 78 C40 78 34 70 34 70" fill="none" stroke="url(#goldGrad)" stroke-width="7" stroke-linecap="round"/>
+          <path d="M58 28 L66 18 M66 18 L76 22 M66 18 L66 32" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFD700" />
+              <stop offset="100%" stop-color="#FF8A00" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <span class="font-display tracking-widest text-2xl text-transparent bg-clip-text bg-gradient-to-r from-white via-gold to-white">SPECTRUM DANCE ACADEMY</span>
+      <div class="w-48 h-1 bg-white/10 rounded-full mt-4 overflow-hidden">
+        <div class="h-full bg-gradient-to-r from-royal to-gold animate-pulse w-full"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor & Dot -->
+  <div id="cursorRing" class="custom-cursor hidden md:block"></div>
+  <div id="cursorDot" class="cursor-dot hidden md:block"></div>
+
+  <!-- Interactive Spotlight Mouse Glow -->
+  <div id="mouseGlow" class="pointer-events-none fixed inset-0 z-10 transition-opacity duration-300 opacity-60" style="background: radial-gradient(700px circle at 50% 50%, rgba(124, 58, 237, 0.08), transparent 80%);"></div>
+
+  <!-- HEADER / NAVBAR -->
+  <header id="mainHeader" class="fixed top-0 left-0 w-full z-40 transition-all duration-300 py-4 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- LOGO -->
+      <a href="#home" class="flex items-center gap-3.5 group">
+        <!-- SVG Badge Logo -->
+        <div class="relative w-12 h-12 rounded-full p-[2px] bg-gradient-to-tr from-gold via-royal to-gold shadow-lg shadow-royal/30 group-hover:shadow-gold/40 transition-shadow">
+          <div class="w-full h-full bg-jet rounded-full flex items-center justify-center relative overflow-hidden">
+            <svg class="w-9 h-9" viewBox="0 0 100 100" fill="none">
+              <!-- Circular decorative ring -->
+              <circle cx="50" cy="50" r="45" stroke="#FFD700" stroke-width="1.5" stroke-dasharray="4 2" opacity="0.6"/>
+              <!-- Elegant Golden S -->
+              <path d="M50 25 C38 25 33 33 33 42 C33 54 67 52 67 66 C67 76 58 79 50 79 C40 79 34 72 34 72" stroke="url(#logoGold)" stroke-width="8" stroke-linecap="round"/>
+              <!-- Dance Silhouette Accent -->
+              <path d="M48 20 Q55 14 62 20" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+              <!-- Music note accent -->
+              <circle cx="68" cy="30" r="3" fill="#7C3AED"/>
+              <path d="M71 30 V22 L80 19 V27" stroke="#7C3AED" stroke-width="2" fill="none"/>
+              <circle cx="77" cy="27" r="3" fill="#7C3AED"/>
+              <defs>
+                <linearGradient id="logoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FFE57F"/>
+                  <stop offset="50%" stop-color="#FFD700"/>
+                  <stop offset="100%" stop-color="#FFA000"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display text-2xl tracking-wider text-white leading-none group-hover:text-gold transition-colors">SPECTRUM</span>
+          <span class="font-heading text-[10px] tracking-[0.25em] text-gold uppercase font-bold">Dance Academy</span>
+        </div>
+      </a>
+
+      <!-- DESKTOP NAV -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-heading font-medium tracking-wide">
+        <a href="#home" class="text-gray-300 hover:text-gold transition-colors">Home</a>
+        <a href="#about" class="text-gray-300 hover:text-gold transition-colors">About</a>
+        <a href="#classes" class="text-gray-300 hover:text-gold transition-colors">Classes</a>
+        <a href="#trainers" class="text-gray-300 hover:text-gold transition-colors">Trainers</a>
+        <a href="#gallery" class="text-gray-300 hover:text-gold transition-colors">Gallery</a>
+        <a href="#pricing" class="text-gray-300 hover:text-gold transition-colors">Pricing</a>
+        <a href="#faq" class="text-gray-300 hover:text-gold transition-colors">FAQ</a>
+        <a href="#contact" class="text-gray-300 hover:text-gold transition-colors">Contact</a>
+      </nav>
+
+      <!-- CTA BUTTONS -->
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="tel:+918935964374" class="px-4 py-2 text-xs font-heading font-bold uppercase tracking-wider text-gold border border-gold/40 rounded-full hover:bg-gold hover:text-jet transition-all duration-300">
+          <i class="fa-solid fa-phone mr-1.5 text-xs"></i> +91 8935964374
+        </a>
+        <a href="#contact" class="px-6 py-2.5 text-xs font-heading font-bold uppercase tracking-wider text-white bg-gradient-to-r from-royal to-royal-dark hover:from-royal-light hover:to-royal rounded-full shadow-lg shadow-royal/40 hover:shadow-royal/60 transition-all transform hover:-translate-y-0.5">
+          Join Now
+        </a>
+      </div>
+
+      <!-- MOBILE TOGGLE BUTTON -->
+      <button id="mobileMenuBtn" class="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 text-gold focus:outline-none z-50">
+        <span class="w-6 h-0.5 bg-gold transition-all duration-300" id="bar1"></span>
+        <span class="w-6 h-0.5 bg-gold transition-all duration-300" id="bar2"></span>
+        <span class="w-6 h-0.5 bg-gold transition-all duration-300" id="bar3"></span>
+      </button>
+    </div>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div id="mobileMenu" class="fixed inset-0 bg-jet/95 backdrop-blur-2xl lg:hidden flex flex-col items-center justify-center gap-6 text-xl font-heading opacity-0 pointer-events-none transition-all duration-300 z-40">
+      <a href="#home" class="mobile-nav-link text-white hover:text-gold">Home</a>
+      <a href="#about" class="mobile-nav-link text-white hover:text-gold">About</a>
+      <a href="#classes" class="mobile-nav-link text-white hover:text-gold">Classes</a>
+      <a href="#trainers" class="mobile-nav-link text-white hover:text-gold">Trainers</a>
+      <a href="#gallery" class="mobile-nav-link text-white hover:text-gold">Gallery</a>
+      <a href="#pricing" class="mobile-nav-link text-white hover:text-gold">Pricing</a>
+      <a href="#faq" class="mobile-nav-link text-white hover:text-gold">FAQ</a>
+      <a href="#contact" class="mobile-nav-link text-white hover:text-gold">Contact</a>
+      <div class="flex flex-col items-center gap-3 mt-4">
+        <a href="tel:+918935964374" class="px-6 py-2.5 text-sm font-heading font-bold uppercase text-gold border border-gold/50 rounded-full">
+          Call: +91 8935964374
+        </a>
+        <a href="https://wa.me/918935964374" target="_blank" class="px-8 py-3 text-sm font-heading font-bold uppercase text-jet bg-gold rounded-full font-bold">
+          <i class="fa-brands fa-whatsapp mr-2 text-base"></i> WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="min-h-screen relative flex items-center justify-center pt-24 pb-16 overflow-hidden">
+    <!-- Particle Canvas Background -->
+    <canvas id="particlesCanvas" class="absolute inset-0 w-full h-full pointer-events-none z-0"></canvas>
+
+    <!-- Animated Spotlights -->
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-royal/25 rounded-full blur-[140px] animate-pulse-glow pointer-events-none"></div>
+    <div class="absolute top-1/2 -right-40 w-[500px] h-[500px] bg-gold/15 rounded-full blur-[160px] animate-pulse-glow pointer-events-none" style="animation-delay: 2.5s;"></div>
+    <div class="absolute bottom-10 left-1/3 w-72 h-72 bg-royal-dark/30 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-20">
+      
+      <!-- Left Hero Text -->
+      <div class="lg:col-span-7 flex flex-col text-left space-y-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-gold/30 backdrop-blur-md w-fit">
+          <span class="w-2 h-2 rounded-full bg-gold animate-ping"></span>
+          <span class="text-xs font-heading font-semibold uppercase tracking-widest text-gold">Admissions Open 2026</span>
+        </div>
+
+        <h1 class="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tight text-white uppercase">
+          WHERE PASSION<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-royal-light via-purple-300 to-white">MEETS</span><br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold via-gold-light to-amber-200 text-glow-gold">PERFORMANCE</span>
+        </h1>
+
+        <p class="font-body text-base md:text-xl text-gray-300 max-w-xl font-light leading-relaxed">
+          Professional Dance Training For Kids, Teens & Adults. Elevate your rhythm, discover stage confidence, and learn from certified national choreographers.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="flex flex-wrap items-center gap-4 pt-4">
+          <a href="#contact" class="px-8 py-4 bg-gradient-to-r from-royal via-royal-light to-royal text-white font-heading font-bold text-sm uppercase tracking-wider rounded-full shadow-lg shadow-royal/40 hover:shadow-royal/70 hover:scale-105 transition-all duration-300">
+            Join Now <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+          </a>
+          <a href="tel:+918935964374" class="px-7 py-4 bg-white/5 border border-gold/40 text-gold hover:bg-gold hover:text-jet font-heading font-bold text-sm uppercase tracking-wider rounded-full backdrop-blur-md transition-all duration-300 flex items-center gap-2">
+            <i class="fa-solid fa-phone"></i> Call Now
+          </a>
+          <a href="#gallery" class="px-6 py-4 text-gray-300 hover:text-white font-heading font-medium text-sm uppercase tracking-wider flex items-center gap-2 group">
+            <span class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center border border-white/20 group-hover:bg-gold group-hover:text-jet group-hover:border-gold transition-all">
+              <i class="fa-solid fa-play text-xs ml-0.5"></i>
+            </span>
+            Watch Gallery
+          </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="pt-6 border-t border-white/10 flex items-center gap-6 text-xs text-gray-400 font-heading">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-certificate text-gold text-base"></i>
+            <span>Certified Trainers</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-star text-gold text-base"></i>
+            <span>4.9 / 5.0 Rating</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-trophy text-gold text-base"></i>
+            <span>National Champions</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right 3D Floating Hero Visual -->
+      <div class="lg:col-span-5 relative flex items-center justify-center">
+        <!-- Circular Backdrop Glow -->
+        <div class="absolute w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-gradient-to-tr from-royal/40 via-purple-600/20 to-gold/30 blur-2xl animate-pulse-glow"></div>
+        
+        <!-- Hero Image Frame with 3D Tilt Effect -->
+        <div id="heroCard" class="relative w-full max-w-md rounded-3xl overflow-hidden p-3 bg-gradient-to-b from-white/20 via-royal/30 to-gold/30 backdrop-blur-xl shadow-2xl animate-float transition-transform duration-300 ease-out">
+          <div class="relative w-full h-[450px] sm:h-[500px] rounded-2xl overflow-hidden bg-jet">
+            <img 
+              src="https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=1000&q=80" 
+              alt="Professional Dancer in Dynamic Pose" 
+              class="w-full h-full object-cover object-center filter contrast-110 brightness-95 transform hover:scale-105 transition-transform duration-700"
+              loading="eager"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-jet via-transparent to-transparent"></div>
+            
+            <!-- Floating Badge On Hero Image -->
+            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-jet/80 backdrop-blur-md border border-gold/30 flex items-center justify-between">
+              <div>
+                <span class="text-xs uppercase font-heading font-bold text-gold tracking-wider">Spotlight Session</span>
+                <p class="text-sm font-semibold text-white">Advanced Masterclass Series</p>
+              </div>
+              <span class="w-10 h-10 rounded-full bg-royal flex items-center justify-center text-gold shadow-lg shadow-royal/50">
+                <i class="fa-solid fa-bolt"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="py-16 border-y border-white/10 bg-darkSurface/60 relative">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="stat-box">
+          <h2 class="font-display text-5xl md:text-6xl text-gold font-bold"><span class="counter" data-target="5000">0</span>+</h2>
+          <p class="text-gray-400 font-heading text-xs uppercase tracking-widest mt-1">Students Trained</p>
+        </div>
+        <div class="stat-box">
+          <h2 class="font-display text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-royal-light to-white font-bold"><span class="counter" data-target="25">0</span>+</h2>
+          <p class="text-gray-400 font-heading text-xs uppercase tracking-widest mt-1">Awards Won</p>
+        </div>
+        <div class="stat-box">
+          <h2 class="font-display text-5xl md:text-6xl text-gold font-bold"><span class="counter" data-target="300">0</span>+</h2>
+          <p class="text-gray-400 font-heading text-xs uppercase tracking-widest mt-1">Stage Shows</p>
+        </div>
+        <div class="stat-box">
+          <h2 class="font-display text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-royal-light to-white font-bold"><span class="counter" data-target="10">0</span>+</h2>
+          <p class="text-gray-400 font-heading text-xs uppercase tracking-widest mt-1">Years Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-heading font-bold tracking-widest text-gold uppercase">Inside The Studio</span>
+        <h2 class="font-display text-5xl md:text-6xl text-white tracking-wide mt-2">OUR PROFESSIONAL STORY</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-royal to-gold mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- Studio Image with Glass Frame -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+            <img 
+              src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80" 
+              alt="Spectrum Dance Academy Studio" 
+              class="w-full h-[480px] object-cover filter brightness-90"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-jet via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 p-5 glass-card rounded-2xl">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-award text-gold text-2xl"></i>
+                <div>
+                  <h4 class="font-heading text-sm font-bold text-white">Ranked #1 Dance Academy</h4>
+                  <p class="text-xs text-gray-400">Awarded for Artistic Excellence & Technique</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Cards: Mission, Vision, Story -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="glass-card p-8 rounded-3xl border border-white/10">
+            <h3 class="font-heading text-2xl font-bold text-white mb-3 flex items-center gap-3">
+              <span class="w-9 h-9 rounded-xl bg-royal/30 text-royal-light flex items-center justify-center text-sm border border-royal/40">
+                <i class="fa-solid fa-quote-left"></i>
+              </span>
+              The Spectrum Philosophy
+            </h3>
+            <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+              Founded over a decade ago, <span class="text-gold font-semibold">Spectrum Dance Academy</span> is committed to bridging foundational technique with breathtaking stage presence. We cultivate every dancer's unique energy through precision, athleticism, and unbridled creative expression.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Mission Card -->
+            <div class="glass-card p-6 rounded-2xl glass-card-hover">
+              <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/30 text-gold flex items-center justify-center text-xl mb-4">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <h4 class="font-heading text-lg font-bold text-white mb-2">Our Mission</h4>
+              <p class="text-gray-400 text-xs md:text-sm leading-relaxed">
+                To deliver elite, world-class dance training accessible to aspiring artists of all ages, transforming personal passion into stage mastery.
+              </p>
+            </div>
+
+            <!-- Vision Card -->
+            <div class="glass-card p-6 rounded-2xl glass-card-hover">
+              <div class="w-12 h-12 rounded-xl bg-royal/20 border border-royal/40 text-royal-light flex items-center justify-center text-xl mb-4">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <h4 class="font-heading text-lg font-bold text-white mb-2">Our Vision</h4>
+              <p class="text-gray-400 text-xs md:text-sm leading-relaxed">
+                To create a globally recognized academy standard where rhythm, health, discipline, and performance joy converge seamlessly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="py-24 bg-darkSurface/40 relative">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-heading font-bold tracking-widest text-gold uppercase">Uncompromising Standards</span>
+        <h2 class="font-display text-5xl md:text-6xl text-white tracking-wide mt-2">WHY CHOOSE US</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-royal to-gold mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 1: Certified Trainers -->
+        <div class="glass-card p-8 rounded-3xl glass-card-hover group">
+          <div class="w-14 h-14 rounded-2xl bg-royal/20 border border-royal/40 text-royal-light flex items-center justify-center text-2xl mb-6 group-hover:bg-gold group-hover:text-jet group-hover:border-gold transition-all duration-300">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3 class="font-heading text-xl font-bold text-white mb-3">Certified Trainers</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Mentors with international certifications and TV reality show choreographic experience who tailor techniques to your pace.
+          </p>
+        </div>
+
+        <!-- 2: National Level Performances -->
+        <div class="glass-card p-8 rounded-3xl glass-card-hover group">
+          <div class="w-14 h-14 rounded-2xl bg-gold/10 border border-gold/40 text-gold flex items-center justify-center text-2xl mb-6 group-hover:bg-gold group-hover:text-jet transition-all duration-300">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <h3 class="font-heading text-xl font-bold text-white mb-3">National Performances</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Direct opportunities to represent the academy in national dance competitions, concerts, and televised festival stages.
+          </p>
+        </div>
+
+        <!-- 3: Affordable Fees -->
+        <div class="glass-card p-8 rounded-3xl glass-card-hover group">
+          <div class="w-14 h-14 rounded-2xl bg-royal/20 border border-royal/40 text-royal-light flex items-center justify-center text-2xl mb-6 group-hover:bg-gold group-hover:text-jet group-hover:border-gold transition-all duration-300">
+            <i class="fa-solid fa-wallet"></i>
+          </div>
+          <h3 class="font-heading text-xl font-bold text-white mb-3">Affordable Fees</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Transparent, competitive membership packages with flexible installment options, ensuring premium education is within reach.
+          </p>
+        </div>
+
+        <!-- 4: Modern Studio -->
+        <div class="glass-card p-8 rounded-3xl glass-card-hover group">
+          <div class="w-14 h-14 rounded-2xl bg-gold/10 border border-gold/40 text-gold flex items-center justify-center text-2xl mb-6 group-hover:bg-gold group-hover:text-jet transition-all duration-300">
+            <i class="fa-solid fa-cubes"></i>
+          </div>
+          <h3 class="font-heading text-xl font-bold text-white mb-3">Modern Studio</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Acoustically treated dance floors, sprung wooden subflooring to protect joints, full-length mirrors, and immersive sound systems.
+          </p>
+        </div>
+
+        <!-- 5: Flexible Timings -->
+        <div class="glass-card p-8 rounded-3xl glass-card-hover group">
+          <div class="w-14 h-14 rounded-2xl bg-royal/20 border border-royal/40 text-royal-light flex items-center justify-center text-2xl mb-6 group-hover:bg-gold group-hover:text-jet group-hover:border-gold transition-all duration-300">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <h3 class="font-heading text-xl font-bold text-white mb-3">Flexible Timings</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Weekday and weekend batches from 6:00 AM to 9:00 PM for working professionals, school students, and hobbyists.
+          </p>
+        </div>
+
+        <!-- 6: Safe Environment -->
+        <div class="glass-card p-8 rounded-3xl glass-card-hover group">
+          <div class="w-14 h-14 rounded-2xl bg-gold/10 border border-gold/40 text-gold flex items-center justify-center text-2xl mb-6 group-hover:bg-gold group-hover:text-jet transition-all duration-300">
+            <i class="fa-solid fa-shield-heart"></i>
+          </div>
+          <h3 class="font-heading text-xl font-bold text-white mb-3">Safe Environment</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            CCTV-monitored air-conditioned facility, hygienic changing rooms, first-aid trained personnel, and encouraging culture.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DANCE CLASSES -->
+  <section id="classes" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-heading font-bold tracking-widest text-gold uppercase">Curated Programs</span>
+        <h2 class="font-display text-5xl md:text-6xl text-white tracking-wide mt-2">OUR DANCE CLASSES</h2>
+        <p class="text-gray-400 text-sm mt-3">From foundational rhythms to performance choreography, choose your discipline.</p>
+        <div class="w-20 h-1 bg-gradient-to-r from-royal to-gold mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- 1. Hip Hop -->
+        <div class="glass-card rounded-3xl p-6 glass-card-hover group flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -right-6 -top-6 w-24 h-24 bg-royal/20 rounded-full blur-xl group-hover:bg-royal/40 transition-colors"></div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-royal to-purple-800 flex items-center justify-center text-white text-xl mb-5 shadow-lg shadow-royal/40">
+              <i class="fa-solid fa-headphones-simple"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white group-hover:text-gold transition-colors">Hip Hop</h3>
+            <p class="text-xs text-gold uppercase font-semibold tracking-wider mt-1">Popping, Locking & Breaking</p>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+              Master isolations, dynamic street grooves, footwork, and rhythm battles in an energetic squad setting.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xs text-gray-400">All Skill Levels</span>
+            <a href="#contact" class="text-gold hover:text-white text-xs font-bold uppercase tracking-wider flex items-center gap-1">Enroll <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 2. Bollywood -->
+        <div class="glass-card rounded-3xl p-6 glass-card-hover group flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -right-6 -top-6 w-24 h-24 bg-gold/15 rounded-full blur-xl group-hover:bg-gold/30 transition-colors"></div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-gold to-amber-600 flex items-center justify-center text-jet text-xl mb-5 shadow-lg shadow-gold/30">
+              <i class="fa-solid fa-music"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white group-hover:text-gold transition-colors">Bollywood</h3>
+            <p class="text-xs text-gold uppercase font-semibold tracking-wider mt-1">Commercial & Filmi Beats</p>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+              High-voltage theatrical expressions, chartbuster choreography, lyrical drama, and festive grooves.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xs text-gray-400">Kids & Adults</span>
+            <a href="#contact" class="text-gold hover:text-white text-xs font-bold uppercase tracking-wider flex items-center gap-1">Enroll <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 3. Contemporary -->
+        <div class="glass-card rounded-3xl p-6 glass-card-hover group flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -right-6 -top-6 w-24 h-24 bg-royal/20 rounded-full blur-xl group-hover:bg-royal/40 transition-colors"></div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-royal to-purple-800 flex items-center justify-center text-white text-xl mb-5 shadow-lg shadow-royal/40">
+              <i class="fa-solid fa-feather-pointed"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white group-hover:text-gold transition-colors">Contemporary</h3>
+            <p class="text-xs text-gold uppercase font-semibold tracking-wider mt-1">Fluidity & Floorwork</p>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+              Combine ballet technique with modern lyrical release, emotional storytelling, breath connection, and leaps.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xs text-gray-400">Intermediate/Pro</span>
+            <a href="#contact" class="text-gold hover:text-white text-xs font-bold uppercase tracking-wider flex items-center gap-1">Enroll <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 4. Classical -->
+        <div class="glass-card rounded-3xl p-6 glass-card-hover group flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -right-6 -top-6 w-24 h-24 bg-gold/15 rounded-full blur-xl group-hover:bg-gold/30 transition-colors"></div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-gold to-amber-600 flex items-center justify-center text-jet text-xl mb-5 shadow-lg shadow-gold/30">
+              <i class="fa-solid fa-hands"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white group-hover:text-gold transition-colors">Classical</h3>
+            <p class="text-xs text-gold uppercase font-semibold tracking-wider mt-1">Kathak & Bharatanatyam</p>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+              Rigorous mudras, intricate footwork tatkar, rhythmic cycles (taal), and traditional abhinaya expressions.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xs text-gray-400">Certification Course</span>
+            <a href="#contact" class="text-gold hover:text-white text-xs font-bold uppercase tracking-wider flex items-center gap-1">Enroll <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 5. Freestyle -->
+        <div class="glass-card rounded-3xl p-6 glass-card-hover group flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -right-6 -top-6 w-24 h-24 bg-royal/20 rounded-full blur-xl group-hover:bg-royal/40 transition-colors"></div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-royal to-purple-800 flex items-center justify-center text-white text-xl mb-5 shadow-lg shadow-royal/40">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white group-hover:text-gold transition-colors">Freestyle</h3>
+            <p class="text-xs text-gold uppercase font-semibold tracking-wider mt-1">Improvisation & Flow</p>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+              Break out of choreographed constraints, discover personal movement signatures, and build freestyle reflexes.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xs text-gray-400">Open Level</span>
+            <a href="#contact" class="text-gold hover:text-white text-xs font-bold uppercase tracking-wider flex items-center gap-1">Enroll <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 6. Kids Dance -->
+        <div class="glass-card rounded-3xl p-6 glass-card-hover group flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -right-6 -top-6 w-24 h-24 bg-gold/15 rounded-full blur-xl group-hover:bg-gold/30 transition-colors"></div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-gold to-amber-600 flex items-center justify-center text-jet text-xl mb-5 shadow-lg shadow-gold/30">
+              <i class="fa-solid fa-child"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white group-hover:text-gold transition-colors">Kids Dance</h3>
+            <p class="text-xs text-gold uppercase font-semibold tracking-wider mt-1">Ages 4 to 12 Years</p>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+              Playful motor skill development, rhythmic coordination, posture alignment, and joyful confidence on stage.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xs text-gray-400">Weekend Batches</span>
+            <a href="#contact" class="text-gold hover:text-white text-xs font-bold uppercase tracking-wider flex items-center gap-1">Enroll <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 7. Wedding Choreography -->
+        <div class="glass-card rounded-3xl p-6 glass-card-hover group flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -right-6 -top-6 w-24 h-24 bg-royal/20 rounded-full blur-xl group-hover:bg-royal/40 transition-colors"></div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-royal to-purple-800 flex items-center justify-center text-white text-xl mb-5 shadow-lg shadow-royal/40">
+              <i class="fa-solid fa-ring"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white group-hover:text-gold transition-colors">Wedding Choreo</h3>
+            <p class="text-xs text-gold uppercase font-semibold tracking-wider mt-1">Sangeet, Couple & Family</p>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+              Tailored routines designed to make the bride, groom, and whole family shine effortlessly without stress.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xs text-gray-400">Custom Packages</span>
+            <a href="#contact" class="text-gold hover:text-white text-xs font-bold uppercase tracking-wider flex items-center gap-1">Enroll <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 8. Zumba & Fitness -->
+        <div class="glass-card rounded-3xl p-6 glass-card-hover group flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -right-6 -top-6 w-24 h-24 bg-gold/15 rounded-full blur-xl group-hover:bg-gold/30 transition-colors"></div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-gold to-amber-600 flex items-center justify-center text-jet text-xl mb-5 shadow-lg shadow-gold/30">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white group-hover:text-gold transition-colors">Zumba Fitness</h3>
+            <p class="text-xs text-gold uppercase font-semibold tracking-wider mt-1">Cardio & Latin Beats</p>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+              Burn 600+ calories per session while grooving to high-tempo reggaeton, salsa, and pop rhythms with friends.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xs text-gray-400">Daily Morning/Evening</span>
+            <a href="#contact" class="text-gold hover:text-white text-xs font-bold uppercase tracking-wider flex items-center gap-1">Enroll <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINERS SECTION -->
+  <section id="trainers" class="py-24 bg-darkSurface/50 relative">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-heading font-bold tracking-widest text-gold uppercase">Master Faculty</span>
+        <h2 class="font-display text-5xl md:text-6xl text-white tracking-wide mt-2">OUR ELITE TRAINERS</h2>
+        <p class="text-gray-400 text-sm mt-3">Learn under seasoned choreographers who have performed on international stages.</p>
+        <div class="w-20 h-1 bg-gradient-to-r from-royal to-gold mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Trainer 1 -->
+        <div class="glass-card rounded-3xl overflow-hidden glass-card-hover group">
+          <div class="relative h-80 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1509670572852-5823184defa6?auto=format&fit=crop&w=700&q=80" 
+              alt="Vikram Sharma - Head Choreographer" 
+              class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-jet via-jet/40 to-transparent"></div>
+            <div class="absolute top-4 right-4 bg-royal/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-heading font-bold text-gold uppercase tracking-wider border border-gold/30">
+              Head Choreographer
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading text-2xl font-bold text-white">Vikram Sharma</h3>
+            <p class="text-gold text-xs font-semibold uppercase tracking-wider mt-1">Hip-Hop & Contemporary Lead</p>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+              12+ years experience. Choreographed national television dance showcases and celebrity stadium concert tours.
+            </p>
+            <div class="mt-4 flex items-center justify-between pt-4 border-t border-white/10">
+              <span class="text-xs text-gray-400">Specialty: Popping & Lyrical</span>
+              <div class="flex items-center gap-3 text-gray-400">
+                <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trainer 2 -->
+        <div class="glass-card rounded-3xl overflow-hidden glass-card-hover group">
+          <div class="relative h-80 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?auto=format&fit=crop&w=700&q=80" 
+              alt="Ananya Roy - Classical & Bollywood Maestro" 
+              class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-jet via-jet/40 to-transparent"></div>
+            <div class="absolute top-4 right-4 bg-royal/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-heading font-bold text-gold uppercase tracking-wider border border-gold/30">
+              Classical Maestro
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading text-2xl font-bold text-white">Ananya Roy</h3>
+            <p class="text-gold text-xs font-semibold uppercase tracking-wider mt-1">Kathak & Bollywood Director</p>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+              Sangeet Natak Akademi honored disciple with 10+ years teaching classical Kathak mudras and cinematic Bollywood.
+            </p>
+            <div class="mt-4 flex items-center justify-between pt-4 border-t border-white/10">
+              <span class="text-xs text-gray-400">Specialty: Expressions & Taal</span>
+              <div class="flex items-center gap-3 text-gray-400">
+                <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trainer 3 -->
+        <div class="glass-card rounded-3xl overflow-hidden glass-card-hover group">
+          <div class="relative h-80 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=700&q=80" 
+              alt="Rohan Verma - Urban & Fitness Instructor" 
+              class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-jet via-jet/40 to-transparent"></div>
+            <div class="absolute top-4 right-4 bg-royal/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-heading font-bold text-gold uppercase tracking-wider border border-gold/30">
+              Fitness & Freestyle
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading text-2xl font-bold text-white">Rohan Verma</h3>
+            <p class="text-gold text-xs font-semibold uppercase tracking-wider mt-1">Zumba Certified & Urban Pro</p>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+              ZIN™ certified trainer bringing electrifying cardio workouts, wedding routines, and freestyle break sessions.
+            </p>
+            <div class="mt-4 flex items-center justify-between pt-4 border-t border-white/10">
+              <span class="text-xs text-gray-400">Specialty: Stamina & Urban Flow</span>
+              <div class="flex items-center gap-3 text-gray-400">
+                <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY MASONRY WITH LIGHTBOX -->
+  <section id="gallery" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-heading font-bold tracking-widest text-gold uppercase">Visual Echoes</span>
+        <h2 class="font-display text-5xl md:text-6xl text-white tracking-wide mt-2">STUDIO & STAGE GALLERY</h2>
+        <p class="text-gray-400 text-sm mt-3">Click on any image to view in high resolution lightbox.</p>
+        <div class="w-20 h-1 bg-gradient-to-r from-royal to-gold mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <!-- Masonry Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="gallery-item group relative rounded-3xl overflow-hidden cursor-pointer border border-white/10" onclick="openLightbox('https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=1400&q=85', 'National Grand Finale Performance')">
+          <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=700&q=80" alt="Dance Performance" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-jet via-jet/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div>
+              <span class="text-xs font-heading font-bold text-gold uppercase">Stage Showcase</span>
+              <h4 class="text-white font-bold text-lg">National Grand Finale</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-3xl overflow-hidden cursor-pointer border border-white/10" onclick="openLightbox('https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1400&q=85', 'Contemporary Fluidity Workshop')">
+          <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=700&q=80" alt="Contemporary Dance" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-jet via-jet/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div>
+              <span class="text-xs font-heading font-bold text-gold uppercase">Studio Training</span>
+              <h4 class="text-white font-bold text-lg">Contemporary Fluidity</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-3xl overflow-hidden cursor-pointer border border-white/10" onclick="openLightbox('https://images.unsplash.com/photo-1518834107812-67b0b7c58434?auto=format&fit=crop&w=1400&q=85', 'Classical Kathak Recital')">
+          <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?auto=format&fit=crop&w=700&q=80" alt="Classical Recital" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-jet via-jet/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div>
+              <span class="text-xs font-heading font-bold text-gold uppercase">Heritage</span>
+              <h4 class="text-white font-bold text-lg">Kathak Evening Recital</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-3xl overflow-hidden cursor-pointer border border-white/10" onclick="openLightbox('https://images.unsplash.com/photo-1509670572852-5823184defa6?auto=format&fit=crop&w=1400&q=85', 'Hip Hop Crew Battle')">
+          <img src="https://images.unsplash.com/photo-1509670572852-5823184defa6?auto=format&fit=crop&w=700&q=80" alt="Hip Hop Battle" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-jet via-jet/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div>
+              <span class="text-xs font-heading font-bold text-gold uppercase">Street Jam</span>
+              <h4 class="text-white font-bold text-lg">Hip Hop Cypher Battles</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-3xl overflow-hidden cursor-pointer border border-white/10" onclick="openLightbox('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=1400&q=85', 'Studio Workout Energy')">
+          <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=700&q=80" alt="Studio Fitness" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-jet via-jet/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div>
+              <span class="text-xs font-heading font-bold text-gold uppercase">Fitness Jam</span>
+              <h4 class="text-white font-bold text-lg">Zumba Sunset Session</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-3xl overflow-hidden cursor-pointer border border-white/10" onclick="openLightbox('https://images.unsplash.com/photo-1535525153412-5a42439a210d?auto=format&fit=crop&w=1400&q=85', 'Kids Annual Gala')">
+          <img src="https://images.unsplash.com/photo-1535525153412-5a42439a210d?auto=format&fit=crop&w=700&q=80" alt="Kids Gala" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-jet via-jet/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div>
+              <span class="text-xs font-heading font-bold text-gold uppercase">Youth Spotlight</span>
+              <h4 class="text-white font-bold text-lg">Kids Annual Gala</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="fixed inset-0 bg-jet/95 backdrop-blur-xl z-50 hidden items-center justify-center p-4 transition-all duration-300" onclick="closeLightbox()">
+    <div class="relative max-w-5xl w-full flex flex-col items-center" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-white hover:text-gold text-2xl font-bold p-2 focus:outline-none">
+        <i class="fa-solid fa-xmark"></i> Close
+      </button>
+      <img id="lightboxImg" src="" alt="Enlarged dance gallery item" class="max-h-[80vh] w-auto rounded-2xl shadow-2xl border border-white/20 object-contain">
+      <p id="lightboxCaption" class="text-gold font-heading font-semibold text-lg mt-4 text-center"></p>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS SLIDER -->
+  <section class="py-24 bg-darkSurface/40 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-heading font-bold tracking-widest text-gold uppercase">Student Stories</span>
+        <h2 class="font-display text-5xl md:text-6xl text-white tracking-wide mt-2">WHAT OUR DANCERS SAY</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-royal to-gold mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <!-- Testimonial Slider Container -->
+      <div class="relative max-w-4xl mx-auto">
+        <div id="testimonialContainer" class="relative min-h-[280px]">
+          
+          <!-- Slide 1 -->
+          <div class="testimonial-slide glass-card p-8 md:p-12 rounded-3xl transition-opacity duration-500 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-gold text-base mb-6">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-gray-200 text-base md:text-lg italic leading-relaxed">
+                "Joining Spectrum transformed my stage presence completely. The mentors here don't just teach steps; they sculpt your rhythm, stamina, and posture. The state-of-the-art wooden flooring and audio setups make every rehearsal feel like a stadium rehearsal!"
+              </p>
+            </div>
+            <div class="flex items-center gap-4 mt-8 pt-6 border-t border-white/10">
+              <div class="w-12 h-12 rounded-full bg-royal text-gold font-bold flex items-center justify-center font-heading">PS</div>
+              <div>
+                <h4 class="font-heading font-bold text-white text-base">Pooja Sharma</h4>
+                <p class="text-xs text-gold">Contemporary & Bollywood Student (2 Years)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide glass-card p-8 md:p-12 rounded-3xl transition-opacity duration-500 hidden flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-gold text-base mb-6">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-gray-200 text-base md:text-lg italic leading-relaxed">
+                "We hired Spectrum for our grand sangeet wedding choreography. Within just 6 sessions, they had our entire family dancing like professionals. Guests were raving about our synchronization for weeks!"
+              </p>
+            </div>
+            <div class="flex items-center gap-4 mt-8 pt-6 border-t border-white/10">
+              <div class="w-12 h-12 rounded-full bg-gold text-jet font-bold flex items-center justify-center font-heading">AK</div>
+              <div>
+                <h4 class="font-heading font-bold text-white text-base">Aman & Kritika</h4>
+                <p class="text-xs text-gold">Wedding Choreography Clients</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide glass-card p-8 md:p-12 rounded-3xl transition-opacity duration-500 hidden flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-gold text-base mb-6">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-gray-200 text-base md:text-lg italic leading-relaxed">
+                "My 7-year-old daughter used to be extremely shy. After 6 months in the Spectrum Kids Batch, her confidence, coordination, and enthusiasm have skyrocketed. The trainers are warm, encouraging, and world-class."
+              </p>
+            </div>
+            <div class="flex items-center gap-4 mt-8 pt-6 border-t border-white/10">
+              <div class="w-12 h-12 rounded-full bg-royal-dark text-white font-bold flex items-center justify-center font-heading">RM</div>
+              <div>
+                <h4 class="font-heading font-bold text-white text-base">Rajesh Mehta</h4>
+                <p class="text-xs text-gold">Proud Parent of Ria Mehta</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="flex items-center justify-center gap-4 mt-8">
+          <button onclick="prevTestimonial()" class="w-11 h-11 rounded-full bg-white/5 border border-white/20 text-white hover:bg-gold hover:text-jet hover:border-gold transition-colors flex items-center justify-center">
+            <i class="fa-solid fa-arrow-left text-sm"></i>
+          </button>
+          <div class="flex items-center gap-2" id="testimonialDots">
+            <span class="w-3 h-3 rounded-full bg-gold cursor-pointer" onclick="goToSlide(0)"></span>
+            <span class="w-3 h-3 rounded-full bg-white/20 cursor-pointer" onclick="goToSlide(1)"></span>
+            <span class="w-3 h-3 rounded-full bg-white/20 cursor-pointer" onclick="goToSlide(2)"></span>
+          </div>
+          <button onclick="nextTestimonial()" class="w-11 h-11 rounded-full bg-white/5 border border-white/20 text-white hover:bg-gold hover:text-jet hover:border-gold transition-colors flex items-center justify-center">
+            <i class="fa-solid fa-arrow-right text-sm"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section id="pricing" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-heading font-bold tracking-widest text-gold uppercase">Transparent Value</span>
+        <h2 class="font-display text-5xl md:text-6xl text-white tracking-wide mt-2">MEMBERSHIP PLANS</h2>
+        <p class="text-gray-400 text-sm mt-3">Invest in your artistry with flexible monthly and quarterly tiers.</p>
+        <div class="w-20 h-1 bg-gradient-to-r from-royal to-gold mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Starter Plan -->
+        <div class="glass-card rounded-3xl p-8 glass-card-hover flex flex-col justify-between border border-white/10">
+          <div>
+            <span class="text-xs font-heading font-bold uppercase tracking-wider text-gray-400">Foundation Tier</span>
+            <h3 class="font-heading text-2xl font-bold text-white mt-1">Starter</h3>
+            <p class="text-xs text-gray-400 mt-2">Ideal for beginners building basic rhythm & fitness.</p>
+            
+            <div class="my-6">
+              <span class="font-display text-5xl text-white">₹2,499</span>
+              <span class="text-xs text-gray-400 uppercase font-heading">/ month</span>
+            </div>
+
+            <ul class="space-y-3.5 text-xs text-gray-300 font-body">
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold"></i> 2 Sessions per week (8 / month)</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold"></i> Access to 1 dance style</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold"></i> Studio practice hours access</li>
+              <li class="flex items-center gap-2.5 text-gray-500"><i class="fa-solid fa-xmark"></i> Stage performance kit</li>
+              <li class="flex items-center gap-2.5 text-gray-500"><i class="fa-solid fa-xmark"></i> 1-on-1 mentor assessment</li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="mt-8 block w-full py-3 text-center text-xs font-heading font-bold uppercase tracking-wider rounded-full border border-gold/40 text-gold hover:bg-gold hover:text-jet transition-colors">
+            Choose Starter
+          </a>
+        </div>
+
+        <!-- Professional Plan (POPULAR) -->
+        <div class="glass-card rounded-3xl p-8 glass-card-hover flex flex-col justify-between border-2 border-gold relative glow-gold bg-royal/10">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-gold to-amber-500 text-jet font-heading font-bold text-[11px] uppercase tracking-widest px-4 py-1 rounded-full shadow-md">
+            Most Popular
+          </div>
+
+          <div>
+            <span class="text-xs font-heading font-bold uppercase tracking-wider text-gold">Intensive Tier</span>
+            <h3 class="font-heading text-2xl font-bold text-white mt-1">Professional</h3>
+            <p class="text-xs text-gray-300 mt-2">For dancers aiming for stage mastery & national showcases.</p>
+            
+            <div class="my-6">
+              <span class="font-display text-5xl text-gold">₹4,499</span>
+              <span class="text-xs text-gray-400 uppercase font-heading">/ month</span>
+            </div>
+
+            <ul class="space-y-3.5 text-xs text-gray-200 font-body">
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold"></i> 4 Sessions per week (16 / month)</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold"></i> Multi-style training (2 styles)</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold"></i> Guaranteed Annual Stage Showcase</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold"></i> Professional video choreography reel</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold"></i> Monthly performance review</li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="mt-8 block w-full py-3.5 text-center text-xs font-heading font-bold uppercase tracking-wider rounded-full bg-gradient-to-r from-gold to-amber-500 text-jet hover:opacity-95 shadow-lg shadow-gold/30 transition-all">
+            Join Professional
+          </a>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="glass-card rounded-3xl p-8 glass-card-hover flex flex-col justify-between border border-white/10">
+          <div>
+            <span class="text-xs font-heading font-bold uppercase tracking-wider text-purple-300">Elite Mastery</span>
+            <h3 class="font-heading text-2xl font-bold text-white mt-1">Premium VIP</h3>
+            <p class="text-xs text-gray-400 mt-2">Unlimited studio access and personalized choreographer coaching.</p>
+            
+            <div class="my-6">
+              <span class="font-display text-5xl text-white">₹7,999</span>
+              <span class="text-xs text-gray-400 uppercase font-heading">/ month</span>
+            </div>
+
+            <ul class="space-y-3.5 text-xs text-gray-300 font-body">
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold"></i> Unlimited classes across ALL styles</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold"></i> 2 Private 1-on-1 sessions per month</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold"></i> Competition team entry auditions</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold"></i> Dedicated 4K solo portfolio shoot</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold"></i> Free academy performance hoodie & bag</li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="mt-8 block w-full py-3 text-center text-xs font-heading font-bold uppercase tracking-wider rounded-full border border-royal/50 text-royal-light hover:bg-royal hover:text-white transition-colors">
+            Choose Premium
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="py-24 bg-darkSurface/50 relative">
+    <div class="max-w-4xl mx-auto px-6 md:px-12">
+      <div class="text-center mb-16">
+        <span class="text-xs font-heading font-bold tracking-widest text-gold uppercase">Got Questions?</span>
+        <h2 class="font-display text-5xl md:text-6xl text-white tracking-wide mt-2">FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-royal to-gold mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- Accordion 1 -->
+        <div class="accordion-item glass-card rounded-2xl p-6 cursor-pointer border border-white/10" onclick="toggleAccordion(this)">
+          <div class="flex items-center justify-between">
+            <h4 class="font-heading font-bold text-base text-white">Can absolute beginners with no prior dance experience join?</h4>
+            <i class="fa-solid fa-chevron-down accordion-icon text-gray-400 transition-transform"></i>
+          </div>
+          <div class="accordion-content">
+            <p class="text-gray-300 text-xs md:text-sm mt-4 leading-relaxed">
+              Yes! More than 60% of our new students start with zero dance background. Our Starter courses break down basic counts, posture, footwork, and muscle memory at an encouraging, comfortable pace.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accordion 2 -->
+        <div class="accordion-item glass-card rounded-2xl p-6 cursor-pointer border border-white/10" onclick="toggleAccordion(this)">
+          <div class="flex items-center justify-between">
+            <h4 class="font-heading font-bold text-base text-white">What is the minimum age requirement for kids?</h4>
+            <i class="fa-solid fa-chevron-down accordion-icon text-gray-400 transition-transform"></i>
+          </div>
+          <div class="accordion-content">
+            <p class="text-gray-300 text-xs md:text-sm mt-4 leading-relaxed">
+              Our Little Champs program welcomes children from 4 years and above. Classes emphasize playful rhythm coordination, posture, and joy before progressing into technical choreography.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accordion 3 -->
+        <div class="accordion-item glass-card rounded-2xl p-6 cursor-pointer border border-white/10" onclick="toggleAccordion(this)">
+          <div class="flex items-center justify-between">
+            <h4 class="font-heading font-bold text-base text-white">Do you offer wedding and couple choreography?</h4>
+            <i class="fa-solid fa-chevron-down accordion-icon text-gray-400 transition-transform"></i>
+          </div>
+          <div class="accordion-content">
+            <p class="text-gray-300 text-xs md:text-sm mt-4 leading-relaxed">
+              Yes, our Wedding Choreography wing crafts customized entry dances, couple performances, flashmobs, and family sangeet sets with home or studio rehearsals.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accordion 4 -->
+        <div class="accordion-item glass-card rounded-2xl p-6 cursor-pointer border border-white/10" onclick="toggleAccordion(this)">
+          <div class="flex items-center justify-between">
+            <h4 class="font-heading font-bold text-base text-white">Can I book a free trial class before committing?</h4>
+            <i class="fa-solid fa-chevron-down accordion-icon text-gray-400 transition-transform"></i>
+          </div>
+          <div class="accordion-content">
+            <p class="text-gray-300 text-xs md:text-sm mt-4 leading-relaxed">
+              Absolutely. We invite every prospective student to experience one complimentary studio trial class. Call or WhatsApp +91 8935964374 to reserve your trial slot.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-heading font-bold tracking-widest text-gold uppercase">Get In Touch</span>
+        <h2 class="font-display text-5xl md:text-6xl text-white tracking-wide mt-2">START YOUR JOURNEY</h2>
+        <p class="text-gray-400 text-sm mt-3">Book your free trial class or speak directly with our senior counselors.</p>
+        <div class="w-20 h-1 bg-gradient-to-r from-royal to-gold mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <!-- Contact Card & Information -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="glass-card p-8 rounded-3xl border border-white/10">
+            <h3 class="font-heading text-2xl font-bold text-white mb-6">Studio Headquarters</h3>
+            
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-2xl bg-gold/10 border border-gold/40 text-gold flex items-center justify-center text-lg shrink-0">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-gray-400 uppercase font-heading font-semibold">Direct Helpline</span>
+                  <a href="tel:+918935964374" class="block text-lg font-bold text-white hover:text-gold transition-colors">+91 8935964374</a>
+                  <p class="text-xs text-gray-400 mt-0.5">Mon - Sun: 7:00 AM - 9:00 PM</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-2xl bg-green-500/10 border border-green-500/40 text-green-400 flex items-center justify-center text-lg shrink-0">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-gray-400 uppercase font-heading font-semibold">Instant WhatsApp</span>
+                  <a href="https://wa.me/918935964374" target="_blank" class="block text-lg font-bold text-green-400 hover:text-green-300 transition-colors">Chat on WhatsApp</a>
+                  <p class="text-xs text-gray-400 mt-0.5">Average response time: &lt; 5 mins</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-2xl bg-royal/20 border border-royal/40 text-royal-light flex items-center justify-center text-lg shrink-0">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-gray-400 uppercase font-heading font-semibold">Studio Location</span>
+                  <p class="text-sm font-semibold text-white">Spectrum Dance Academy, Central Arts Hub</p>
+                  <p class="text-xs text-gray-400 mt-0.5">High-Tech Soundstage, Sprung Dance Floors</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Action Buttons -->
+            <div class="grid grid-cols-2 gap-4 mt-8 pt-6 border-t border-white/10">
+              <a href="tel:+918935964374" class="py-3 text-center bg-gold text-jet font-heading font-bold text-xs uppercase tracking-wider rounded-xl hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
+                <i class="fa-solid fa-phone"></i> Call Direct
+              </a>
+              <a href="https://wa.me/918935964374" target="_blank" class="py-3 text-center bg-[#25D366] text-white font-heading font-bold text-xs uppercase tracking-wider rounded-xl hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Google Map Frame -->
+          <div class="rounded-3xl overflow-hidden border border-white/10 h-64 relative">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.5620925235546!2d77.227321!3d28.612912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM2JzQ2LjUiTiA3N8KwMTMnMzguMyJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="100%" 
+              style="border:0; filter: invert(90%) hue-rotate(180deg) brightness(85%) contrast(120%);" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+            <div class="absolute bottom-3 left-3 bg-jet/80 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/20 text-[11px] text-white">
+              <i class="fa-solid fa-location-arrow text-gold mr-1"></i> Spectrum Studios
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact & Booking Form -->
+        <div class="lg:col-span-7">
+          <div class="glass-card p-8 md:p-10 rounded-3xl border border-white/10 relative">
+            <h3 class="font-heading text-2xl font-bold text-white mb-2">Book Your Free Trial Class</h3>
+            <p class="text-xs text-gray-400 mb-8">Fill in your details below and our team will confirm your batch schedule within 2 hours.</p>
+
+            <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label class="block text-xs font-heading font-semibold uppercase text-gray-400 mb-1.5">Full Name *</label>
+                  <input type="text" required placeholder="e.g. Aryan Kapoor" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-gold transition-colors">
+                </div>
+                <div>
+                  <label class="block text-xs font-heading font-semibold uppercase text-gray-400 mb-1.5">Phone / WhatsApp *</label>
+                  <input type="tel" required placeholder="+91 8935964374" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-gold transition-colors">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label class="block text-xs font-heading font-semibold uppercase text-gray-400 mb-1.5">Interested Dance Style</label>
+                  <select class="w-full px-4 py-3 rounded-xl bg-darkSurface border border-white/10 text-white text-sm focus:outline-none focus:border-gold transition-colors">
+                    <option value="hip-hop">Hip Hop</option>
+                    <option value="bollywood">Bollywood</option>
+                    <option value="contemporary">Contemporary</option>
+                    <option value="classical">Classical (Kathak)</option>
+                    <option value="freestyle">Freestyle</option>
+                    <option value="kids">Kids Dance</option>
+                    <option value="wedding">Wedding Choreography</option>
+                    <option value="zumba">Zumba Fitness</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-heading font-semibold uppercase text-gray-400 mb-1.5">Age Group</label>
+                  <select class="w-full px-4 py-3 rounded-xl bg-darkSurface border border-white/10 text-white text-sm focus:outline-none focus:border-gold transition-colors">
+                    <option value="adult">Adult (18+)</option>
+                    <option value="teen">Teen (13 - 17)</option>
+                    <option value="kid">Kid (4 - 12)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-heading font-semibold uppercase text-gray-400 mb-1.5">Your Goals or Questions</label>
+                <textarea rows="4" placeholder="Tell us about your previous dance experience or specific goals..." class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-gold transition-colors"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-royal via-purple-600 to-royal text-white font-heading font-bold text-sm uppercase tracking-wider shadow-lg shadow-royal/40 hover:shadow-royal/70 hover:opacity-95 transition-all">
+                Claim Free Trial Slot <i class="fa-solid fa-arrow-right ml-2"></i>
+              </button>
+            </form>
+
+            <div id="formSuccess" class="hidden mt-4 p-4 rounded-xl bg-green-500/20 border border-green-500/40 text-green-300 text-xs text-center font-heading">
+              <i class="fa-solid fa-circle-check mr-1.5"></i> Request received! Our counseling counselor will call you on WhatsApp shortly.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="bg-black border-t border-white/10 pt-16 pb-12 relative">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        
+        <!-- Col 1 & 2: Brand -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full p-[2px] bg-gradient-to-tr from-gold via-royal to-gold flex items-center justify-center">
+              <div class="w-full h-full bg-jet rounded-full flex items-center justify-center">
+                <span class="font-display text-gold text-lg">S</span>
+              </div>
+            </div>
+            <div>
+              <span class="font-display text-2xl tracking-wider text-white">SPECTRUM</span>
+              <span class="block font-heading text-[9px] tracking-[0.25em] text-gold uppercase font-bold">Dance Academy</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed max-w-sm">
+            Spectrum Dance Academy is an international standard dance sanctuary committed to artistic excellence, expressive discipline, and premier stage performance.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 text-gold flex items-center justify-center hover:bg-gold hover:text-jet transition-colors"><i class="fa-brands fa-instagram text-xs"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 text-gold flex items-center justify-center hover:bg-gold hover:text-jet transition-colors"><i class="fa-brands fa-youtube text-xs"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 text-gold flex items-center justify-center hover:bg-gold hover:text-jet transition-colors"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+            <a href="https://wa.me/918935964374" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 text-green-400 flex items-center justify-center hover:bg-green-500 hover:text-white transition-colors"><i class="fa-brands fa-whatsapp text-xs"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 3: Navigation -->
+        <div>
+          <h4 class="font-heading font-bold text-xs uppercase tracking-widest text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2.5 text-xs text-gray-400 font-body">
+            <li><a href="#home" class="hover:text-gold transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-gold transition-colors">About Us</a></li>
+            <li><a href="#classes" class="hover:text-gold transition-colors">Dance Disciplines</a></li>
+            <li><a href="#trainers" class="hover:text-gold transition-colors">Faculty & Mentors</a></li>
+            <li><a href="#gallery" class="hover:text-gold transition-colors">Stage Gallery</a></li>
+            <li><a href="#pricing" class="hover:text-gold transition-colors">Membership Fees</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Disciplines -->
+        <div>
+          <h4 class="font-heading font-bold text-xs uppercase tracking-widest text-white mb-4">Disciplines</h4>
+          <ul class="space-y-2.5 text-xs text-gray-400 font-body">
+            <li><a href="#classes" class="hover:text-gold transition-colors">Hip Hop & Urban</a></li>
+            <li><a href="#classes" class="hover:text-gold transition-colors">Bollywood Dance</a></li>
+            <li><a href="#classes" class="hover:text-gold transition-colors">Lyrical Contemporary</a></li>
+            <li><a href="#classes" class="hover:text-gold transition-colors">Classical Kathak</a></li>
+            <li><a href="#classes" class="hover:text-gold transition-colors">Kids Foundation</a></li>
+            <li><a href="#classes" class="hover:text-gold transition-colors">Wedding Choreo</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Contact -->
+        <div>
+          <h4 class="font-heading font-bold text-xs uppercase tracking-widest text-white mb-4">Direct Contact</h4>
+          <p class="text-xs text-gray-400 mb-2">Have inquiries or want to tour the facility?</p>
+          <a href="tel:+918935964374" class="block font-heading font-bold text-gold text-sm hover:underline">+91 8935964374</a>
+          <a href="https://wa.me/918935964374" target="_blank" class="block text-xs text-green-400 mt-1 hover:underline">WhatsApp: +91 8935964374</a>
+          <p class="text-[11px] text-gray-500 mt-3">Open 7 days a week: 7 AM - 9 PM</p>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 font-body gap-4">
+        <p>&copy; 2026 Spectrum Dance Academy. All Rights Reserved. Crafted with Passion & Precision.</p>
+        <p class="text-gray-400">Call / WhatsApp: <span class="text-gold font-semibold">+91 8935964374</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTION BUTTONS (CALL & WHATSAPP & BACK TO TOP) -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+    <!-- Back To Top Button -->
+    <button id="backToTopBtn" onclick="scrollToTop()" class="w-12 h-12 rounded-full bg-jet/80 border border-white/20 text-gold hover:bg-gold hover:text-jet shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300">
+      <i class="fa-solid fa-arrow-up text-sm"></i>
+    </button>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+918935964374" class="w-13 h-13 p-3.5 rounded-full bg-royal hover:bg-royal-light text-white shadow-xl shadow-royal/40 flex items-center justify-center hover:scale-110 transition-transform">
+      <i class="fa-solid fa-phone text-lg"></i>
+    </a>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918935964374" target="_blank" class="w-13 h-13 p-3.5 rounded-full bg-[#25D366] text-white shadow-xl shadow-green-500/40 flex items-center justify-center hover:scale-110 transition-transform">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // 1. Loading Screen
+    window.addEventListener('load', () => {
+      const loading = document.getElementById('loadingScreen');
+      if (loading) {
+        setTimeout(() => {
+          loading.style.opacity = '0';
+          setTimeout(() => { loading.style.display = 'none'; }, 700);
+        }, 600);
+      }
+    });
+
+    // 2. Custom Cursor & Interactive Mouse Glow
+    const cursorRing = document.getElementById('cursorRing');
+    const cursorDot = document.getElementById('cursorDot');
+    const mouseGlow = document.getElementById('mouseGlow');
+
+    window.addEventListener('mousemove', (e) => {
+      const { clientX: x, clientY: y } = e;
+      if (cursorRing && cursorDot) {
+        cursorRing.style.left = `${x}px`;
+        cursorRing.style.top = `${y}px`;
+        cursorDot.style.left = `${x}px`;
+        cursorDot.style.top = `${y}px`;
+      }
+      if (mouseGlow) {
+        mouseGlow.style.background = `radial-gradient(700px circle at ${x}px ${y}px, rgba(124, 58, 237, 0.12), transparent 80%)`;
+      }
+    });
+
+    document.querySelectorAll('a, button, input, select, textarea, .gallery-item, .accordion-item').forEach(el => {
+      el.addEventListener('mouseenter', () => cursorRing && cursorRing.classList.add('hovered'));
+      el.addEventListener('mouseleave', () => cursorRing && cursorRing.classList.remove('hovered'));
+    });
+
+    // 3. Header Scroll & Scroll Progress
+    const header = document.getElementById('mainHeader');
+    const scrollBar = document.getElementById('scrollProgressBar');
+    const backToTopBtn = document.getElementById('backToTopBtn');
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+
+      if (scrollBar) {
+        scrollBar.style.width = `${scrollPercent}%`;
+      }
+
+      if (header) {
+        if (scrollTop > 40) {
+          header.classList.add('bg-jet/85', 'backdrop-blur-xl', 'border-b', 'border-white/10', 'py-3');
+          header.classList.remove('py-4');
+        } else {
+          header.classList.remove('bg-jet/85', 'backdrop-blur-xl', 'border-b', 'border-white/10', 'py-3');
+          header.classList.add('py-4');
+        }
+      }
+
+      if (backToTopBtn) {
+        if (scrollTop > 500) {
+          backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+          backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+        } else {
+          backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+          backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+        }
+      }
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // 4. Mobile Menu
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    let menuOpen = false;
+
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        menuOpen = !menuOpen;
+        if (menuOpen) {
+          mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+          mobileMenu.classList.add('opacity-100', 'pointer-events-auto');
+          document.getElementById('bar1').style.transform = 'rotate(45deg) translate(5px, 5px)';
+          document.getElementById('bar2').style.opacity = '0';
+          document.getElementById('bar3').style.transform = 'rotate(-45deg) translate(5px, -5px)';
+        } else {
+          mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+          mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');
+          document.getElementById('bar1').style.transform = 'none';
+          document.getElementById('bar2').style.opacity = '1';
+          document.getElementById('bar3').style.transform = 'none';
+        }
+      });
+
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          menuOpen = false;
+          mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+          mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');
+          document.getElementById('bar1').style.transform = 'none';
+          document.getElementById('bar2').style.opacity = '1';
+          document.getElementById('bar3').style.transform = 'none';
+        });
+      });
+    }
+
+    // 5. Canvas Floating Particles in Hero
+    const canvas = document.getElementById('particlesCanvas');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+
+      function resizeCanvas() {
+        canvas.width = canvas.parentElement.offsetWidth;
+        canvas.height = canvas.parentElement.offsetHeight;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+
+      for (let i = 0; i < 40; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          size: Math.random() * 2.5 + 0.5,
+          speedY: Math.random() * 0.4 + 0.1,
+          speedX: (Math.random() - 0.5) * 0.3,
+          color: Math.random() > 0.5 ? '#FFD700' : '#7C3AED',
+          alpha: Math.random() * 0.7 + 0.2
+        });
+      }
+
+      function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.y -= p.speedY;
+          p.x += p.speedX;
+          if (p.y < 0) {
+            p.y = canvas.height;
+            p.x = Math.random() * canvas.width;
+          }
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+          ctx.fillStyle = p.color;
+          ctx.globalAlpha = p.alpha;
+          ctx.fill();
+        });
+        requestAnimationFrame(animateParticles);
+      }
+      animateParticles();
+    }
+
+    // 6. 3D Tilt On Hero Card
+    const heroCard = document.getElementById('heroCard');
+    if (heroCard) {
+      heroCard.addEventListener('mousemove', (e) => {
+        const rect = heroCard.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        heroCard.style.transform = `perspective(1000px) rotateY(${x * 0.05}deg) rotateX(${-y * 0.05}deg) translateY(-8px)`;
+      });
+      heroCard.addEventListener('mouseleave', () => {
+        heroCard.style.transform = `translateY(0px) rotate(0deg)`;
+      });
+    }
+
+    // 7. Animated Numbers Counter (IntersectionObserver)
+    const counters = document.querySelectorAll('.counter');
+    let animated = false;
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !animated) {
+          animated = true;
+          counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            let current = 0;
+            const increment = target / 60;
+            const updateCount = () => {
+              current += increment;
+              if (current < target) {
+                counter.innerText = Math.ceil(current);
+                requestAnimationFrame(updateCount);
+              } else {
+                counter.innerText = target;
+              }
+            };
+            updateCount();
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+
+    const statsSection = document.querySelector('.stat-box');
+    if (statsSection) {
+      counterObserver.observe(statsSection);
+    }
+
+    // 8. Gallery Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+
+    function openLightbox(src, caption) {
+      if (lightbox && lightboxImg) {
+        lightboxImg.src = src;
+        lightboxCaption.innerText = caption;
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+      }
+    }
+
+    function closeLightbox() {
+      if (lightbox) {
+        lightbox.classList.add('hidden');
+        lightbox.classList.remove('flex');
+      }
+    }
+
+    // 9. Testimonials Carousel
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const dots = document.querySelectorAll('#testimonialDots span');
+
+    function showSlide(index) {
+      slides.forEach((slide, idx) => {
+        if (idx === index) {
+          slide.classList.remove('hidden');
+        } else {
+          slide.classList.add('hidden');
+        }
+      });
+      dots.forEach((dot, idx) => {
+        if (idx === index) {
+          dot.classList.add('bg-gold');
+          dot.classList.remove('bg-white/20');
+        } else {
+          dot.classList.remove('bg-gold');
+          dot.classList.add('bg-white/20');
+        }
+      });
+      currentSlide = index;
+    }
+
+    function nextTestimonial() {
+      let next = (currentSlide + 1) % slides.length;
+      showSlide(next);
+    }
+
+    function prevTestimonial() {
+      let prev = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(prev);
+    }
+
+    function goToSlide(index) {
+      showSlide(index);
+    }
+
+    setInterval(nextTestimonial, 6000);
+
+    // 10. FAQ Accordion
+    function toggleAccordion(element) {
+      const isActive = element.classList.contains('active');
+      document.querySelectorAll('.accordion-item').forEach(item => item.classList.remove('active'));
+      if (!isActive) {
+        element.classList.add('active');
+      }
+    }
+
+    // 11. Contact Form Submit Handler
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const formSuccess = document.getElementById('formSuccess');
+      if (formSuccess) {
+        formSuccess.classList.remove('hidden');
+        e.target.reset();
+        setTimeout(() => {
+          formSuccess.classList.add('hidden');
+        }, 5000);
+      }
+    }
+  </script>
+</body>
+</html>
